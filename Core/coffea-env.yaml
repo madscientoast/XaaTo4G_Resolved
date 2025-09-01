@@ -1,0 +1,26 @@
+name: coffea-env
+channels:
+  - conda-forge
+dependencies:
+  # Core HEP stack
+  - coffea>=2025.7.1,<2026
+  - dask>=2025.3.0,<2026
+  - distributed>=2025.3.0,<2026
+
+  # Interactive + notebooks
+  - jupyterlab>=4.4.5,<5
+  - notebook>=7.4.4,<8
+  - ipywidgets>=8.1.7,<9
+
+  # Analysis packages (your additions)
+  - numpy>=2,<3
+  - awkward>=2.8,<3
+  - uproot>=5.6,<6
+  - vector>=1.6,<2
+  - hist>=2.8,<3
+  - matplotlib>=3.8,<4
+
+  # Helpful extras
+  - numba
+  - lz4
+  - tqdm
